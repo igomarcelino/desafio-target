@@ -21,6 +21,11 @@ public class Fibonacci {
         int a = 0;
         int b = 1;
         boolean numeroFibo = false;
+        /**
+            Esse for nao escreve a sequencia correta de fibonacci , ele escreve 1,2,3,5,...., mas como o enunciado quer saber
+            se o numero pertence ou nao a fibonaci, entao ele simula que partindo de 0 , o proximo numero (1) somado ao antecessor (0) sera o
+            proximo numero da sequencia . 
+        */
         for(int i = 0; i <= numero; i=b){
             i = a+b;
             a = b;
